@@ -241,10 +241,20 @@
         </div>
     </div>
     <script>
+        // Music controls
         const musicPlayer = document.getElementById('musicPlayer');
+        const volumeControl = document.getElementById('volumeControl');
 
         function togglePlay() {
-            musicPlayer.paused ? musicPlayer.play() : musicPlayer.pause();
+            if (musicPlayer.paused) {
+                musicPlayer.play();
+            } else {
+                musicPlayer.pause();
+            }
+        }
+
+        function adjustVolume(volume) {
+            musicPlayer.volume = volume.value;
         }
 
         function createSparkling() {

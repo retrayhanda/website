@@ -239,18 +239,27 @@
             <p>ana screenshot ini kalau ana sudah memilih "iya"...</p>
             <button class="button" onclick="closeNotification()">Tutup</button>
         </div>
+        <div>
+            <button class="button" onclick="togglePlay()">Play/Pause</button>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.2" onchange="adjustVolume(this)">
+        </div>
     </div>
     <script>
         const musicPlayer = document.getElementById('musicPlayer');
         const volumeControl = document.getElementById('volumeControl');
 
         function togglePlay() {
-            musicPlayer.paused ? musicPlayer.play() : musicPlayer.pause();
+            if (musicPlayer.paused) {
+                musicPlayer.play();
+            } else {
+                musicPlayer.pause();
+            }
         }
 
         function adjustVolume(volume) {
             musicPlayer.volume = volume.value;
         }
+
         function createSparkling() {
             const sparkling = document.createElement('div');
             sparkling.classList.add('sparkling');

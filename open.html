@@ -221,6 +221,10 @@
         Your browser does not support the audio element.
     </audio>
     <div class="container">
+        <div>
+            <button class="button" onclick="togglePlay()">Play/Pause</button>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.2" onchange="adjustVolume(this)">
+        </div>
         <h1>Halo ana</h1>
         <p>harap dibaca baik baik yaa, ni aku serius loh, demi ana aku ketikin kodingan biar ana bisa baca pesan dari aku hehe</p>
         <button class="button" onclick="showMessage()">Open</button>
@@ -238,10 +242,6 @@
         <div id="notificationBox" class="notification-box">
             <p>ana screenshot ini kalau ana sudah memilih "iya"...</p>
             <button class="button" onclick="closeNotification()">Tutup</button>
-        </div>
-        <div>
-            <button class="button" onclick="togglePlay()">Play/Pause</button>
-            <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.2" onchange="adjustVolume(this)">
         </div>
     </div>
     <script>

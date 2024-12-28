@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan untuk Pacar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff00ff, #e67ed4);
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #fff;
+            margin: 0;
+            animation: fadeInDown 1.5s ease;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #ffffff;
+            margin-top: 1rem;
+            animation: fadeInUp 2s ease;
+        }
+
+        .button {
+            margin-top: 2rem;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .button:hover {
+            background: rgba(255, 100, 255, 0.4);
+            transform: scale(1.1);
+        }
+
+        /* Sparkling Animation */
+        .sparkling {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: radial-gradient(circle, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+            border-radius: 50%;
+            animation: sparkleAnimation 1.5s infinite ease-in-out;
+        }
+
+        @keyframes sparkleAnimation {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(0);
+                opacity: 0;
+            }
+        }
+
+        .message-box {
+            margin-top: 1rem;
+            padding: 20px;
+            background: rgba(255, 109, 248, 0.9);
+            border-radius: 10px;
+            color: #ffffff;
+            font-size: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .notification-box {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background: rgba(255, 109, 248, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: none;
+            animation: fadeIn 0.5s ease;
+            z-index: 1000;
+        }
+
+        .question-box {
+            margin-top: 2rem;
+            padding: 20px;
+            background: rgba(255, 109, 248, 0.9);
+            border-radius: 10px;
+            color: #333;
+            font-size: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
+        .question-button {
+            padding: 10px 20px;
+            background: rgba(129, 1, 123, 0.9);
+            margin: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .question-button:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .firework {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #6e0269;
+            border-radius: 50%;
+            animation: fireworkAnimation 1s ease-out forwards;
+        }
+
+        @keyframes fireworkAnimation {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(3);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <audio id="musicPlayer" autoplay loop>
+        <source src="bunga_maaf.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="container">
+        <h1>Halo ana</h1>
+        <p>harap dibaca baik baik yaa, ni aku serius loh, demi ana aku ketikin kodingan biar ana bisa baca pesan dari aku hehe</p>
+        <button class="button" onclick="showMessage()">Open</button>
+        <div id="messageBox" class="message-box">
+            <p>Hmm, mau mulai dari mana ya ngomongnya. Sebelumnya aku minta maaf banget sama ana selama ini baik dari sikap dan tingkah laku aku yang udah nyakitin hati ana. Aku jujur aja ya, Ana, intinya aku sudah selesai dengan masa lalu aku, dan aku yakin bahagianya aku nggak ada di sana.</p>
+            <p>Mungkin Ana bertanya-tanya kenapa aku bisa hadir lagi di kehidupan Ana. Aku sendiri juga nggak tahu kenapa aku bisa begini. Cuman, aku selalu ngerasa di hati aku ini masih ada Ana. dan ya aku tetap sayang sama ana, gaada abisnya ana buat aku.</p>
+            <p>Jadi aku berharap pilihan aku ini yang terakhir kalinya, demi allah jujur aku mau serius sama ana, aku juga mau bareng sama ana terus, mau hidup bareng ana, mau kesana kemari sama ana, apapun itu sama ana pokoknya.</p>
+            <p>Aku ga terlalu pandai berkata kata, namun aku berusaha ngebuat ana yakin dan percaya sama aku, dengan cara perjuangan yang akan aku lakuin, dan aku ga maksain ana juga kok disini, ana berhak juga nentuin keputusan karna itu haknya ana, tapi kalau ana mpada akhirnya emang memilih aku, aku harap ana pertimbangkan lagi baik baik, ana tau aku orangnya gimana kan, aku orangnya amat sangat pecemburuan, ya sejauh ini rasa pecemburuan gabisa hilang dari aku, selebihnya aku bisa berusaha sebaik mungkin, dan aku berani ngejamin kalau ana bener bareng sama aku, aku bakal tunjukin ke ana gimana seriusnya aku untuk perjuangin ana demi masa depan.</p>
+        </div>
+
+        <!-- Question Box -->
+        <div id="questionBox" class="question-box">
+            <p>Jadi intinya, aku mau ada lagi ana dan aret, maksudnya aku mau kita memulai hubungan lagi dari awal, ya kalau ana yakin ana tahu harus pilih tombol apa, cuman kalau ana belum yakin, berfikirlah ana dulu sejernih jernihnya agar hati ana yakin, ikutin aja apa kata hati ana pokoknya.</p>
+            <button class="question-button" onclick="handleYes()">Iya</button>
+            <button id="noButton" class="question-button" onclick="handleNo()">Tidak</button>
+        </div>
+
+        <!-- Notification Box -->
+        <div id="notificationBox" class="notification-box">
+            <p>ana screenshot ini kalau ana sudah memilih "iya" dan kirim ke aret hehe</p>
+            <button class="button" onclick="closeNotification()">Tutup</button>
+        </div>
+
+        <!-- Music Controls -->
+        <div>
+            <button class="button" onclick="togglePlay()">Play/Pause</button>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.2" onchange="adjustVolume(this)">
+        </div>
+    </div>
+
+    <script>
+        // Music controls
+        const musicPlayer = document.getElementById('musicPlayer');
+        const volumeControl = document.getElementById('volumeControl');
+
+        function togglePlay() {
+            if (musicPlayer.paused) {
+                musicPlayer.play();
+            } else {
+                musicPlayer.pause();
+            }
+        }
+
+        function adjustVolume(volume) {
+            musicPlayer.volume = volume.value;
+        }
+
+        // Create sparkling effects
+        function createSparkling() {
+            const sparkling = document.createElement('div');
+            sparkling.classList.add('sparkling');
+            sparkling.style.left = Math.random() * 100 + 'vw';
+            sparkling.style.top = Math.random() * 100 + 'vh';
+            document.body.appendChild(sparkling);
+
+            setTimeout(() => {
+                sparkling.remove();
+            }, 1500);
+        }
+
+        setInterval(createSparkling, 300);
+
+        // Show message
+        function showMessage() {
+            const messageBox = document.getElementById('messageBox');
+            messageBox.style.display = 'block';
+
+            // Show question box after message
+            setTimeout(() => {
+                const questionBox = document.getElementById('questionBox');
+                questionBox.style.display = 'block';
+            }, 1000);
+        }
+
+        // Handle Yes button
+        function handleYes() {
+            for (let i = 0; i < 20; i++) {
+                const firework = document.createElement('div');
+                firework.classList.add('firework');
+                firework.style.left = Math.random() * 100 + 'vw';
+                firework.style.top = Math.random() * 100 + 'vh';
+                document.body.appendChild(firework);
+
+                setTimeout(() => {
+                    firework.remove();
+                }, 1000);
+            }
+
+            // Show notification box
+            const notificationBox = document.getElementById('notificationBox');
+            notificationBox.style.display = 'block';
+        }
+
+        // Close notification
+        function closeNotification() {
+            const notificationBox = document.getElementById('notificationBox');
+            notificationBox.style.display = 'none';
+        }
+
+        // Handle No button with random movement
+        function handleNo() {
+            const noButton = document.getElementById('noButton');
+            const maxX = window.innerWidth - noButton.offsetWidth;
+            const maxY = window.innerHeight - noButton.offsetHeight;
+
+            function moveButtonRandomly() {
+                const randomX = Math.random() * maxX;
+                const randomY = Math.random() * maxY;
+                noButton.style.position = 'absolute';
+                noButton.style.left = randomX + 'px';
+                noButton.style.top = randomY + 'px';
+            }
+
+            moveButtonRandomly();
+            setInterval(moveButtonRandomly, 300);
+        }
+    </script>
+</body>
+</html>
